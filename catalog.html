@@ -2,11 +2,14 @@
 <html lang="ru">
 <head>
 	<title>DEVICE Каталог</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header class="main-header">
+	<header class="main-header catalog">
 			<div class="container">
-				<img class="main-header-logo" src="image/main-header-logo.png" width="164" height="36" alt="Device">
+				<a  class="main-header-logo" href="#">
+					<img src="image/main-header-logo.png" width="164" height="36" alt="Device">
+				</a>
 				<div class="main-header-user">
 					<form class="main-header-user-search" action="#" method="post">
 						<label>
@@ -65,23 +68,55 @@
 			</div>
 		</nav>
 		<div class="main-content">
-			<div class="container">
+			<div class="container clearfix">
 				<section class="main-content-filter">
 					<div class="main-content-filter-title">
 						<h3>Фильтр:</h3>
 					</div>
-					<form class="main-content-filter-form" action="#" method="post">
+					<form class="main-content-filter-form" action="#" method="get">
 						<h4 class="main-content-filter-form-title">Стоимость</h4>
 						<h4 class="main-content-filter-form-title">Цвет</h4>
-						<input type="checkbox" name="black" checked>Черный<br>
-						<input type="checkbox" name="white">Белый<br>
-						<input type="checkbox" name="blue" checked>Синий<br>
-						<input type="checkbox" name="red" checked>Красный<br>
-						<input type="checkbox" name="pink">Розовый
+						<ul class="main-content-filter-form-listcheckboxes">
+							<li class="main-content-filter-form-itemcheckbox">
+								<label>
+									<input type="checkbox" name="black" checked>Черный
+								</label>
+							</li>
+							<li class="main-content-filter-form-itemcheckbox">
+								<label>
+									<input type="checkbox" name="white">Белый
+								</label>
+							</li>
+							<li class="main-content-filter-form-itemcheckbox">
+								<label>
+									<input type="checkbox" name="blue" checked>Синий
+								</label>
+							</li>
+							<li class="main-content-filter-form-itemcheckbox">
+								<label>
+									<input type="checkbox" name="red" checked>Красный
+								</label>
+							</li>
+							<li class="main-content-filter-form-itemcheckbox">	
+								<label>
+									<input type="checkbox" name="pink">Розовый
+								</label>
+							</li>
+						</ul>
 						<h4 class="main-content-filter-form-title">Bluetooth</h4>
-						<input type="radio" name="bluetooth" value="yes" checked>Есть<br>
-						<input type="radio" name="bluetooth" value="no">Нет<br>
-						<input type="submit" name="btn" value="Показать">
+						<ul class="main-content-filter-form-listradio">
+							<li class="main-content-filter-form-itemradio">
+								<label>	
+									<input type="radio" name="bluetooth" value="yes" checked>Есть
+								</label>
+							</li>
+							<li class="main-content-filter-form-itemradio">
+								<label>
+									<input type="radio" name="bluetooth" value="no">Нет
+								</label>	
+							</li>
+						</ul>
+						<input type="submit" name="btn" value="Показать">	
 					</form>
 				</section>
 				<section class="main-content-gallery">
@@ -123,7 +158,7 @@
 						</figure>
 						<figure class="main-content-gallery-images-item">
 							<a href="#">
-								<img src="image/item-4.jpg" width="360" height="380" alt="Селфи-палка &quotСледуй за мной&quot">
+								<img src="image/item-4.jpg" width="360" height="380" alt="Селфи-палка &amp;quotСледуй за мной&amp;quot">
 								<h2 class="main-content-gallery-images-title">Селфи-палка "Следуй за мной"</h2>
 								<p class="main-content-gallery-images-price">4 900 руб.</p>
 							</a>	
@@ -143,7 +178,9 @@
 	<footer class="main-footer">
 		<div class="container">
 			<div class="main-footer-about">
-				<img class="main-footer-logo" src="image/main-footer-logo.png" width="163" height="36" alt="Device">
+				<a class="main-footer-logo" href="#">
+					<img src="image/main-footer-logo.png" width="163" height="36" alt="Device">
+				</a>
 				<address class="main-header-logo-address">г. Москва, ул. Строителей, 15</address>
 			</div>
 			<nav class="main-footer-menu">
@@ -166,7 +203,7 @@
 					</li>
 					<li class="main-footer-menu-social-item">
 						<a href="#">
-							<img src="image/icon-insta.svg" width="38" height="38" alt=instagram"">
+							<img src="image/icon-insta.svg" width="38" height="38" alt="instagram">
 						</a>
 					</li>
 					<li class="main-footer-menu-social-item">
