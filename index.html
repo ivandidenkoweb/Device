@@ -3,56 +3,53 @@
 <head>
 	<meta charset="utf-8">
 	<title>DEVICE</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header class="main-header index">
-			<div class="container">
-				<a  class="main-header-logo" href="#">
-					<img src="image/main-header-logo.png" width="164" height="36" alt="Device">
-				</a>
-				<div class="main-header-user">
-					<form class="main-header-user-search" action="#" method="post">
-						<label>
-							<input type="text" name="search-input" placeholder="Поиск по сайту">
-						</label>
-						<input type="submit" name="search-btn" value="Найти">
-					</form>
-					<ul class="main-header-user-list">
-						<li class="main-header-user-list-item">
-							<a href="#">Войти</a>
-						</li>
-						<li class="main-header-user-list-item">
-							<a href="#">Сравнить</a>
-						</li>
-						<li class="main-header-user-list-item">
-							<a href="#">Корзина</a>
-						</li>
-					</ul>
-				</div>
-				<nav class="main-header-menu">
-					<ul class="main-header-menu-list">
-						<li class="main-header-menu-item">
-							<a href="#">Каталог товаров</a>
-						</li>
-						<li class="main-header-menu-item">
-							<a href="#">Доставка</a>
-						</li>
-						<li class="main-header-menu-item">
-							<a href="#">Гарантия</a>
-						</li>
-						<li class="main-header-menu-item">
-							<a href="#">Контакты</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
+	<header class="main-header container">
+		<a  class="main-header-logo" href="#">
+			<img src="image/main-header-logo.png" width="164" height="36" alt="Device">
+		</a>
+		<div class="main-header-user clearfix">
+			<form class="main-header-user-search" action="#" method="post">
+				<label>
+					<input type="text" name="search-input" placeholder="Поиск по сайту">
+				</label>
+			</form>
+			<ul class="main-header-user-list">
+				<li class="main-header-user-list-item enter">
+					<a href="#">Войти</a>
+				</li>
+				<li class="main-header-user-list-item compare">
+					<a href="#">Сравнить</a>
+				</li>
+				<li class="main-header-user-list-item basket">
+					<a href="#">Корзина</a>
+				</li>
+			</ul>
+		</div>
+		<nav class="main-header-menu">
+			<ul class="main-header-menu-list">
+				<li class="main-header-menu-item catalog">
+					<a href="#">Каталог товаров</a>
+				</li>
+				<li class="main-header-menu-item delivery">
+					<a href="#">Доставка</a>
+				</li>
+				<li class="main-header-menu-item guarantee">
+					<a href="#">Гарантия</a>
+				</li>
+				<li class="main-header-menu-item contacts">
+					<a href="#">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+		<article class="main-header-slider">
+		</article>
 	</header>
 	<main>
-		<article class="slider">
-			<div class="container">
-			</div>
-		</article>
 		<section class="assortment">
 			<div class="container">
 				<ul class="assortment-list">
