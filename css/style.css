@@ -218,7 +218,7 @@ html {
 }
 
 main {
-	margin-top: 500px;
+	margin-top: 481px;
 }
 
 .assortment {
@@ -252,6 +252,7 @@ main {
 }
 
 .assortment-item h2 {
+	width: 125px;
 	font-size: 18px;
 }
 
@@ -271,6 +272,7 @@ main {
 
 .assortment-item-image.monopods {
 	background-image: url("../image/assortment-item-2.png");
+	background-position: center bottom;
 }
 
 .assortment-item-image.action {
@@ -290,7 +292,6 @@ main {
 }
 .advantages {
 	position: relative;
-	min-height: 390px;
 }
 
 .advantages::after {
@@ -301,7 +302,7 @@ main {
 	z-index: -2;
 
 	width: 100%;
-	height: 288px;
+	height: 219px;
 	
 	background-color: #e6e6e6;
 }
@@ -309,16 +310,16 @@ main {
 .advantages-navigation-list {
 	position: relative;
 
-	width: 283px;
+	width: 284px;
 	padding: 0;
 	padding-top: 80px;
 	border-right: 7px solid #000000;
-	padding-bottom: 71px;
+	padding-bottom: 47px;
 }
 
 .advantages-navigation-item {
 	display: block;
-	margin-bottom: 21px;
+	margin-bottom: 24px;
 
 	list-style: none;
 }
@@ -327,13 +328,14 @@ main {
 	position: relative;
 
 	display: inline-block;
-	width: 160px;
+	width: 172px;
 
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
 	line-height: 40px;
 	vertical-align: middle;
+	letter-spacing: 0.2em;
 	color: #000000;
 	font-size: 18px;
 	font-family: "Gilroyextrabold", "Arial", sans-serif;
@@ -353,7 +355,7 @@ main {
   z-index: -1;
 
 	display: inline-block;
-	width: 100%;
+	width: 160px;
 	height: 8px;
 	
 	background-color: #ffc600;
@@ -365,8 +367,8 @@ main {
 
 .advantages-navigation-slider {
 	position: absolute;
-	top: 72px;
-  right: -800px;
+	top: 55px;
+  right: -820px;
 
   display: none;
 
@@ -379,6 +381,7 @@ main {
 
 	vertical-align: top;
 	font-size: 18px;
+	margin-top: 15px;
 }
 
 .advantages-navigation-discription {
@@ -386,27 +389,33 @@ main {
 }
 
 .advantages-navigation-discription h2 {
-	margin-bottom: 30px;
+	margin-bottom: 28px;
 
 	font-size: 47px;
+	letter-spacing: 0.02em;
 	font-family: "Gilroyextrabold", "Arial", sans-serif;
 }
 
 .advantages-navigation-discription p {
 	font-size: 15px;
 	line-height: 30px;
+	letter-spacing: 0.02em;
 	font-family: "Open Sans", "Arial", sans-serif;
 }
 
-.advantages-navigation-slider img.delivery {
+.advantages-navigation-slider.credit {
+	right: -813px;
+}
+
+.advantages-navigation-slider.delivery img {
 	margin-left: 100px;
 }
 
-.advantages-navigation-slider img.warranty {
-	margin-left: 82px;
+.advantages-navigation-slider.warranty img {
+	margin-left: 66px;
 }
 
-.advantages-navigation-slider img.credit {
+.advantages-navigation-slider.credit img {
 	margin-left: 73px;
 }
 
@@ -415,30 +424,138 @@ main {
 }
 
 .partners {
-	min-height: 288px;
+	margin-top: 163px;
+	margin-bottom: 93px;
 }
 
-.partners .container {
-	width: 1200px;
-	margin: 20px auto;
+.partners-list {
+	font-size: 0;
 }
 
 .partners-item {
 	display: inline-block;
+	width: 260px;
+	margin-right: 40px;
+
+	vertical-align: top;
+}
+
+.partners-item:last-child {
+	margin-right: 0;
 }
 
 .info {
-	min-height: 655px;
-}
-
-.info .container {
-	width: 1200px;
-	margin: 20px auto;
 }
 
 .info-about {
 	float: left;
-	width: 460px;
+	width: 485px;
+}
+
+.info-about,
+.info-contacts {
+	position: relative;
+}
+
+.info-about::before,
+.info-contacts::before {
+	content: "";
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: block;
+	width: 80px;
+	height: 7px;
+
+	background-color: #000000;
+}
+
+.info-about-title,
+.info-contacts-title {
+	margin-top: 49px;
+	margin-bottom: 40px;
+
+	font-size: 47px;
+	font-family: "Gilroyextrabold", "Arial", sans-serif;
+	letter-spacing: 0.01em;
+}
+
+.info-about-text,
+.info-contacts-text {
+	margin-bottom: 30px; 
+
+	font-family: "Open Sans", "Arial", sans-serif;
+	letter-spacing: 0.01em;
+	font-size: 15px;
+	line-height: 30px;
+}
+
+.info-about-list {
+	padding-top: 36px;
+  margin-left: 35px;
+  letter-spacing: 0.01em;
+
+	list-style: none;
+}
+
+.info-about-item {
+	position: relative;
+
+	color: #000000;
+	font-size: 16px;
+	line-height: 40px;
+	font-family: "Gilroyextrabold", "Arial", sans-serif; 
+}
+
+.info-about-item::after {
+	content: "";
+
+	position: absolute;
+	left: -35px;
+  top: 15px;
+
+	display: block;
+	width: 10px;
+	height: 10px;
+	border: 3px solid rgba(0, 0, 0, 0.3);
+	border-radius: 50%; 
+}
+
+.info-about-btn,
+.info-contacts-btn {
+	position: relative;
+
+	display: block;
+	width: 260px;
+	margin-top: 64px;
+	margin-bottom: 74px;
+
+	font-size: 18px;
+	letter-spacing: 0.2em;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Gilroyextrabold", "Arial", sans-serif;
+	color: #000000;
+	text-decoration: none;
+}
+
+.info-about-btn::before,
+.info-contacts-btn::before {
+	content: "";
+	
+	position: absolute;
+	left: 0;
+	top: 6px;
+	z-index: -1;
+
+	display: block;
+	width: 100%;
+	height: 8px;
+
+	background-color: #ffc600;
+
 }
 
 .info-contacts {
@@ -446,29 +563,68 @@ main {
 	width: 560px;
 }
 
+.info-contacts-map {
+	margin: 0;
+	padding-top: 9px;
+	padding-bottom: 11px;
+}
+
 .main-footer {
-	min-height: 323px;
 	font-size: 0;
 
 	background-color: #444444;
 }
 
-.main-footer .container {
-	width: 1200px;
-	margin: 20px auto;
-}
-
 .main-footer-about {
+	position: relative;
+
 	width: 360px;
 	display: inline-block;
 	font-size: 16px;
+}
+
+.main-footer-logo {
+	display: block;
+	margin-top: 65px;
+	margin-bottom: 25px;
+}
+
+.main-header-logo-address {
+	margin-bottom: 155px;
+
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	color: #ffffff;
+}
+
+.main-footer-about::after {
+	content: "";
+
+	position: absolute;
+	left: 0;
+  bottom: 77px;
+
+	display: block;
+	width: 80px;
+	height: 8px;
+
+	background-color: #ffe27f;
 }
 
 .main-footer-menu {
 	width: 470px;
 	display: inline-block;
 	font-size: 16px;
+	text-align: center;
+	vertical-align: top;
 }
+
+.main-footer-menu-list {
+	margin-top: 140px;
+	margin-bottom: 60px;
+}
+
 
 .main-footer-menu-item,
 .main-footer-menu-social-item,
@@ -476,9 +632,37 @@ main {
 	display: inline-block;
 }
 
+.main-footer-menu-item {
+	margin-right: 35px;
+}
+
+.main-footer-menu-item:last-child {
+	margin-right: 0;
+}
+
+.main-footer-menu-item a {
+	font-family: "Gilroyextrabold", "Arial", sans-serif;
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 0.2em;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.main-footer-menu-social-image {
+	width: 45px;
+	height: 45px;
+}
+
+.main-footer-menu-social-image.fb {
+	background-image: url("../image/icon-fb.svg") no-repeat;
+}
+
 .main-footer-user {
 	display: inline-block;
 	width: 330px;
 	font-size: 16px;
+	vertical-align: top;
+	text-align: right;
 }
 
