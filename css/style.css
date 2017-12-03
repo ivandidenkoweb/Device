@@ -97,6 +97,7 @@ html {
 
 	font-size: 0;
 	text-align: right;
+	vertical-align: top;
 }
 
 .main-header-user-list-item:first-child {
@@ -163,12 +164,13 @@ html {
 	margin-right: 55px;
 	margin-left: 60px;
 	margin-top: 38px;
-	padding-bottom: 165px;
+	padding-bottom: 125px;
 	font-size: 0;
 }
 
 .main-header-menu-item {
 	display: inline-block;
+	padding-bottom: 40px;
 }
 
 .main-header-menu-item.catalog {
@@ -228,6 +230,7 @@ main {
 
 .assortment-list {
 	font-size: 0;
+	text-align: center;
 }
 
 .assortment-item {
@@ -237,6 +240,7 @@ main {
 
 	font-family: "Gilroyextrabold", "Arial", sans-serif;
 	font-size: 18px;
+	text-align: left;
 	vertical-align: top;
 }
 
@@ -430,6 +434,7 @@ main {
 
 .partners-list {
 	font-size: 0;
+	text-align: center;
 }
 
 .partners-item {
@@ -623,7 +628,7 @@ main {
 
 .main-footer-menu-list {
 	margin-top: 138px;
-	margin-bottom: 62px;
+	margin-bottom: 37px;
 }
 
 
@@ -635,6 +640,7 @@ main {
 
 .main-footer-menu-item {
 	margin-right: 35px;
+	margin-bottom: 25px;
 }
 
 .main-footer-menu-item:last-child {
