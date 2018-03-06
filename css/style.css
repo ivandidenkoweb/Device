@@ -71,9 +71,7 @@ html {
 	font-size: 15px;
 	line-height: 36px;
 	color: #000000;
-
-	background-color: transparent;
-    
+	background-color: transparent;   
 }
 
 .main-header-user-search::before {
@@ -220,6 +218,8 @@ html {
 	top: 188px;
 	width: 1160px;
 	min-height: 492px;
+	font-size: 0;
+	vertical-align: top;
 }
 
 .main-header-slider > input[type="radio"] {
@@ -233,30 +233,23 @@ html {
 	display: none;
 }
 
-.main-header-slider-image.slider2 {
-	margin-left: 116px;
-  margin-top: 8px;
-}
-
-.main-header-slider-image.slider3 {
-	margin-left: 7px;
-  margin-top: 62px;
-}
-
 .main-header-slider-image {
-	float: left;
-	margin-left: 90px;
+	display: inline-block;
+	width: 600px;
+	margin: 0;
+	text-align: center;
 }
 
 .main-header-slider-info {
-	float: right;
-	width: 500px;
-	margin-left: 126px;
+	display: inline-block;
+	width: 560px;
+	font-size: 16px;
+	vertical-align: top;
 }
 
 .main-header-slider-info::before {
 	content: "";
-	position: absolute;
+	position: relative;
 	top: 37px;
 	display: block;
 	width: 100px;
@@ -265,9 +258,8 @@ html {
 }
 
 .main-header-slider-info-number {
-	position: absolute;
-  right: -14px;
-  top: -14px;
+	margin-top: -21px;
+	margin-right: 46px;
 	text-align: right;
 	font-family: "Gilroyextrabold", "Arial", sans-serif;
 	font-size: 179px;
@@ -277,20 +269,9 @@ html {
 	line-height: 179px;
 }
 
-.main-header-slider-info-text {
-	position: relative;
-	top: 80px;
-	right: 3px;
-	width: 400px;
-	font-family: "Open Sans", "Arial", sans-serif;
-	font-size: 15px;
-	letter-spacing: 0.01em;
-	color: #000000;
-	text-align: left; 
-	vertical-align: 30px;
-}
-
-.main-header-slider-info-text span{
+.main-header-slider-info-maintext {
+	margin-top: -86px;
+	margin-left: -4px;
 	font-family: "Gilroyextrabold", "Arial", sans-serif;
 	font-size: 47px;
 	letter-spacing: 0.01em;
@@ -299,12 +280,22 @@ html {
 	line-height: 1.2em;
 }
 
+.main-header-slider-info-discriptiontext {
+	margin-top: 19px;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 15px;
+	letter-spacing: 0.01em;
+	color: #000000;
+	text-align: left; 
+	line-height: 30px;
+}
+
 .main-header-slider-info-btn {
   position: relative;
   display: block;
   width: 220px;
-  margin-top: 160px;
-  margin-bottom: 74px;
+  margin-top: 53px;
+  margin-bottom: 63px;
   font-size: 18px;
   letter-spacing: 0.2em;
   text-align: center;
@@ -327,9 +318,6 @@ html {
 }
 
 .main-header-slider-info-table {
-	position: relative;
-  top: -11px;
-  left: -1px;
   width: 510px;
   border-spacing: 0px;
   border-collapse: collapse;
