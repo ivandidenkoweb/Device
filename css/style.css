@@ -57,33 +57,76 @@ html {
 
 .main-header-user-search {
 	position: relative;
-
 	float: left;
-	width: 200px;
-
+	top: -6px;
+	width: 440px;
+	margin-left: 13px;
+	font-size: 0;
 	text-align: right;
 }
 
 .main-header-user-search input {
 	border: none;
-
+	width: 354px;
+	outline: none;
+	padding-left: 37px;
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
-	line-height: 36px;
+	line-height: 47px;
+	letter-spacing: 0.01em;
 	color: #000000;
-	background-color: transparent;   
+	vertical-align: top;
+	background-color: transparent;  
+}
+
+.main-header-user-search input::placeholder {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.main-header-user-search input:hover::placeholder {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.main-header-user-search input:focus {
+	border-bottom: 2px solid black;
 }
 
 .main-header-user-search::before {
 	content: "";
-
 	position: absolute;
-	top: 11px;
-	left: 15px;
-
+	top: 17px;
+	left: 2px;
 	width: 16px;
 	height: 16px;
 	background-image: url("../image/icon-search.svg");
+}
+
+.main-header-user-search-btn {
+	width: 86px;
+	height: 49px;
+	border: none;
+	border: 2px solid #000000;
+	background-color: transparent;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 15px;
+	line-height: 36px;
+	letter-spacing: 0.01em;
+	color: #000000; 
+	visibility: hidden;
+}
+
+.main-header-user-search input:focus + .main-header-user-search-btn {
+	visibility: visible;
+}
+
+.main-header-user-search-btn:hover {
+	color: #ffffff;
+	background-color: #000000;
+}
+
+.main-header-user-search-btn:active {
+	color: rgba(255, 255, 255, 0.3);
+	background-color: #000000;
 }
 
 .main-header-user-list {
@@ -162,7 +205,7 @@ html {
 .main-header-menu {
 	margin-right: 55px;
 	margin-left: 60px;
-	margin-top: 38px;
+	margin-top: 24px;
 	padding-bottom: 125px;
 	font-size: 0;
 }
