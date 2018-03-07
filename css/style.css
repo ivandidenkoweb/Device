@@ -39,10 +39,24 @@ html {
 	background-color: rgba(255, 198, 0, 0.5);
 }
 
-.main-header-logo {
+a.main-header-logo {
 	margin-left: 58px;
 	position: relative;
   top: -19px;
+  font-family: "Gilroyextrabold", "Arial", sans-serif;
+  font-size: 48px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a.main-header-logo:hover {
+	color: #444444;
+}
+
+a.main-header-logo:active {
+	color: #666666;
 }
 
 .main-header-user {
@@ -136,10 +150,17 @@ html {
 .main-header-user-list-item {
 	display: inline-block;
 	margin-right: 20px;
-
 	font-size: 0;
 	text-align: right;
 	vertical-align: top;
+}
+
+.main-header-user-list-item:hover {
+	opacity: 0.6;
+}
+
+.main-header-user-list-item:active {
+	opacity: 0.3;
 }
 
 .main-header-user-list-item:first-child {
@@ -239,7 +260,6 @@ html {
 	top: 40px;
 	left: -60px;
 	z-index: 1;
-	display: table;
 	display: none;
 	padding-bottom: 35px;
 	width: 1160px;
@@ -264,6 +284,18 @@ li.catalog-menu-item a {
 	text-decoration: none;
 	text-transform: inherit;
 	color: #000000;
+}
+
+.main-header-menu a:hover {
+	opacity: 0.6;
+}
+
+.main-header-menu a:active {
+	opacity: 0.3;
+}
+
+li.main-header-menu-item.catalog a:hover + .catalog-menu {
+	display: table;
 }
 
 .main-header-menu-item.delivery,
@@ -392,6 +424,11 @@ li.catalog-menu-item a {
   background-color: #ffc600;
 }
 
+.main-header-slider-info-btn::before:hover {
+	top: -7px;
+	height: 40px;
+}
+
 .main-header-slider-info-table {
   width: 510px;
   border-spacing: 0px;
@@ -435,6 +472,10 @@ li.catalog-menu-item a {
   border-radius: 50%;
   vertical-align: top;
   cursor: pointer;
+}
+
+.main-header-slider-controls label:hover {
+	border: 3px solid rgba(0, 0, 0, 0.4);
 }
 
 #btn1:checked ~ .main-header-slider1,
