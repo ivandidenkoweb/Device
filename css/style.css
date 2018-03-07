@@ -191,6 +191,38 @@ html {
 	background-image: url("../image/plus.png");
 }
 
+.catalog-menu {
+	position: absolute;
+	top: 40px;
+	left: -60px;
+	z-index: 1;
+	display: table;
+	display: none;
+	padding-bottom: 35px;
+	width: 1160px;
+	background-color: #ffe393;
+}
+
+.catalog-menu-list {
+  display: table-row;
+}
+.catalog-menu-item {
+  display: table-cell;
+  padding-left: 60px;
+  padding-bottom: 20px;
+}
+
+li.catalog-menu-item a {
+	display: block;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 15px;
+	letter-spacing: 0.01em;
+	vertical-align: top;
+	text-decoration: none;
+	text-transform: inherit;
+	color: #000000;
+}
+
 .main-header-menu-item.delivery,
 .main-header-menu-item.guarantee {
 	margin-right: 19px;
