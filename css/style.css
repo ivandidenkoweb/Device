@@ -756,8 +756,35 @@ main {
 	display: inline-block;
 	width: 260px;
 	margin-right: 40px;
-
 	vertical-align: top;
+}
+
+.partners-item a {
+	position: relative;
+}
+
+.partners-item-hover-image {
+	position: absolute;
+	top: -100px;
+	z-index: 5;
+	width: 260px;
+	height: 100px;
+}
+
+.partners-item-link1:hover .partners-item-hover-image {
+	background-image: url(../image/logo-dji.jpg);
+}
+
+.partners-item-link2:hover .partners-item-hover-image {
+	background-image: url(../image/logo-spgadgets.jpg);
+}
+
+.partners-item-link3:hover .partners-item-hover-image {
+	background-image: url(../image/logo-gopro.jpg);
+}
+
+.partners-item-link4:hover .partners-item-hover-image {
+	background-image: url(../image/logo-vive.jpg);
 }
 
 .partners-item:last-child {
@@ -923,6 +950,23 @@ main {
 	margin-bottom: 25px;
 }
 
+a.main-footer-logo {
+  font-family: "Gilroyextrabold", "Arial", sans-serif;
+  font-size: 48px;
+  letter-spacing: 0.01em;
+  color: #ffe27f;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+a.main-footer-logo:hover {
+	color: #ffc600;
+}
+
+a.main-footer-logo:active {
+	opacity: 0.3;
+}
+
 .main-header-logo-address {
 	margin-bottom: 155px;
 
@@ -984,9 +1028,16 @@ main {
 	text-decoration: none;
 }
 
+.main-footer-menu-item a:hover {
+	opacity: 0.6;
+}
+
+.main-footer-menu-item a:active {
+	opacity: 0.3;
+}
+
 .main-footer-menu-social-list {
 	width: 456px;
-
 	font-size: 0;
 }
 
@@ -998,6 +1049,7 @@ main {
 
 .main-footer-menu-social-item a {
 	display: block;
+	font-size: 0;
 }
 
 .main-footer-social-image {
@@ -1012,14 +1064,32 @@ main {
 	background-repeat: no-repeat;
 }
 
+.main-footer-social-image.fb:hover {
+	background-image: url("../image/facebook-hover.png");
+}
+
 .main-footer-social-image.insta {
 	background-image: url("../image/insta.png");
 	background-repeat: no-repeat;
 }
 
+.main-footer-social-image.insta:hover {
+	background-image: url("../image/insta-hover.png");
+}
+
 .main-footer-social-image.tw {
 	background-image: url("../image/twitter.png");
 	background-repeat: no-repeat;
+}
+
+.main-footer-social-image.tw:hover {
+	background-image: url("../image/twitter-hover.png");
+}
+
+.main-footer-social-image.fb:active,
+.main-footer-social-image.insta:active,
+.main-footer-social-image.tw:active {
+	opacity: 0.17;
 }
 
 .main-footer-user {
@@ -1055,54 +1125,72 @@ main {
 	position: relative;
 }
 
-.main-footer-user-item.enter::before {
-	content: "";
+.main-footer-user-item a{
+	display: block;
+	width: 100px;
+	font-family:  "Open Sans", "Arial", sans-serif;
+	line-height: 36px;
+	text-decoration: none;
+	color: #ffffff;
+	opacity: 0.7;
+	letter-spacing: 0.01em;
+}
 
+.main-footer-user-item a:hover {
+	opacity: 1.0;
+}
+
+.main-footer-user-item a:active {
+	opacity: 0.3;
+}
+
+.main-footer-user-item.enter .logo {
 	position: absolute;
 	top: 10px;
 	left: 30px;
-
+	display: block;
 	width: 15px;
 	height: 15px;
 	background-image: url("../image/user.png");
 	background-repeat: no-repeat;
 }
 
-.main-footer-user-item.compare::before {
-	content: "";
-
+.main-footer-user-item.compare .logo {
 	position: absolute;
 	top: 10px;
 	left: 10px;
-
+	display: block;
 	width: 15px;
 	height: 15px;
 	background-image: url("../image/compare.png");
 	background-repeat: no-repeat;
 }
 
-.main-footer-user-item.basket::before {
-	content: "";
-
+.main-footer-user-item.basket .logo {
 	position: absolute;
 	top: 10px;
 	left: 15px;
-
+	display: block;
 	width: 15px;
 	height: 15px;
 	background-image: url("../image/cart.png");
 	background-repeat: no-repeat;
 }
 
-.main-footer-user-item a{
-	display: block;
-	width: 100px;
+.main-footer-user-item.enter:hover .logo {
+	background-image: url("../image/user-hover.png");
+}
 
-	font-family:  "Open Sans", "Arial", sans-serif;
-	line-height: 36px;
-	text-decoration: none;
-	color: #ffffff;
-	letter-spacing: 0.01em;
+.main-footer-user-item.compare:hover .logo {
+	background-image: url("../image/compare-hover.png");
+}
+
+.main-footer-user-item.basket:hover .logo {
+	background-image: url("../image/cart-hover.png");
+}
+
+.main-footer-user-item:active .logo {
+	opacity: 0.3;
 }
 
 .main-footer-user-telephon {
@@ -1111,6 +1199,27 @@ main {
 	font-size: 15px;
 	line-height: 30px;
 	color: #ffffff;
+}
+
+.main-footer-user-copyright {
+	position: relative;
+}
+
+.main-footer-user-copyright-hover {
+	position: absolute;
+	left: 0;
+	z-index: 5;
+	display: inline-block;
+	width: 27px;
+	height: 34px;
+}
+
+.main-footer-user-copyright:hover .main-footer-user-copyright-hover {
+	background-image: url("../image/htmlacademy-hover.png");
+}
+
+.main-footer-user-copyright:active {
+	opacity: 0.3;
 }
 
 .modal-content {
