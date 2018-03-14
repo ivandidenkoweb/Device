@@ -5,52 +5,61 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header class="main-header catalog">
-			<div class="container">
-				<a  class="main-header-logo" href="#">
-					<img src="image/main-header-logo.png" width="164" height="36" alt="Device">
-				</a>
-				<div class="main-header-user">
-					<form class="main-header-user-search" action="#" method="post">
-						<label>
-							<input type="text" name="search-input" placeholder="Поиск по сайту">
-						</label>
-						<input type="submit" name="search-btn" value="Найти">
-					</form>
-					<ul class="main-header-user-list">
-						<li class="main-header-user-list-item">
-							<a href="#">Диденко Иван</a>
-						</li>
-						<li class="main-header-user-list-item">
-							<a href="#">Выйти</a>
-						</li>
-						<li class="main-header-user-list-item">
-							<a href="#">Сравнить</a>
-						</li>
-						<li class="main-header-user-list-item">
-							<a href="#">Корзина</a>
-						</li>
-					</ul>
-				</div>
-				<nav class="main-header-menu">
-					<ul class="main-header-menu-list">
-						<li class="main-header-menu-item">
-							<a href="#">Каталог товаров</a>
-						</li>
-						<li class="main-header-menu-item">
-							<a href="#">Доставка</a>
-						</li>
-						<li class="main-header-menu-item">
-							<a href="#">Гарантия</a>
-						</li>
-						<li class="main-header-menu-item">
-							<a href="#">Контакты</a>
-						</li>
-					</ul>
-				</nav>
-			</div>
+	<header class="main-header container inner">
+		<a  class="main-header-logo" href="">
+			Device
+		</a>
+		<div class="main-header-user clearfix">
+			<form class="main-header-user-search" action="#" method="post">
+				<label for="seach"></label>
+				<input id="seach" type="text" name="search-input" placeholder="Поиск по сайту">
+				<button class="main-header-user-search-btn">Найти</button>
+			</form>
+			<ul class="main-header-user-list">
+				<li class="main-header-user-list-item enter inner">
+					<a class="login" href="#">Иван Диденко</a>
+					<a class="logout" href="#">Выйти</a>
+				</li>
+				<li class="main-header-user-list-item compare">
+					<a href="#">Сравнить</a>
+				</li>
+				<li class="main-header-user-list-item basket">
+					<a href="#">Корзина</a>
+				</li>
+			</ul>
+		</div>
+		<nav class="main-header-menu">
+			<ul class="main-header-menu-list">
+				<li class="main-header-menu-item catalog">
+					<a href="#">Каталог товаров</a>
+					<nav class="catalog-menu">
+						<ul class="catalog-menu-list">
+							<li class="catalog-menu-item"><a href="#">Виртуальная рeальность</a></li>
+							<li class="catalog-menu-item"><a href="#">Фитнесс браслеты</a></li>
+							<li class="catalog-menu-item"><a href="#">Квадрокоптеры</a></li>
+						</ul>
+						<ul class="catalog-menu-list">
+							<li class="catalog-menu-item"><a href="#">Моноподы для селфи</a></li>
+							<li class="catalog-menu-item"><a href="#">Умные часы</a></li>
+						</ul>
+						<ul class="catalog-menu-list">
+							<li class="catalog-menu-item"><a href="#">Экшн-камеры</a></li>
+						</ul>
+					</nav>
+				</li>
+				<li class="main-header-menu-item delivery">
+					<a href="#">Доставка</a>
+				</li>
+				<li class="main-header-menu-item guarantee">
+					<a href="#">Гарантия</a>
+				</li>
+				<li class="main-header-menu-item contacts">
+					<a href="#">Контакты</a>
+				</li>
+			</ul>
+		</nav>
 	</header>
-	<main>
+	<main class="inner">
 		<nav class="main-navigation">
 			<div class="container">
 				<h1 class="main-navigation-title">Моноподы для селфи</h1>
@@ -70,9 +79,7 @@
 		<div class="main-content">
 			<div class="container clearfix">
 				<section class="main-content-filter">
-					<div class="main-content-filter-title">
-						<h3>Фильтр:</h3>
-					</div>
+					<h3 class="main-content-filter-title">Фильтр:</h3>
 					<form class="main-content-filter-form" action="#" method="get">
 						<h4 class="main-content-filter-form-title">Стоимость</h4>
 						<h4 class="main-content-filter-form-title">Цвет</h4>
@@ -139,28 +146,30 @@
 							<a href="#">
 								<img src="image/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
 								<h2 class="main-content-gallery-images-title">Любительская селфи-палка</h2>
-								<p class="main-content-gallery-images-price">500 руб.</p>
+								<span class="main-content-gallery-images-price">500 руб.</span>
 							</a>
 						</figure>
 						<figure class="main-content-gallery-images-item">
 							<a href="#">
 								<img src="image/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-								<h2 class="main-content-gallery-images-title">Профессиональная селфи-палка</h2>
-								<p class="main-content-gallery-images-price">1 500 руб.</p>
+								<h2 class="main-content-gallery-images-title">Профессиональная<br>
+								селфи-палка</h2>
+								<span class="main-content-gallery-images-price">1 500 руб.</span>
 							</a>	
 						</figure>
 						<figure class="main-content-gallery-images-item">
 							<a href="#">
 								<img src="image/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
 								<h2 class="main-content-gallery-images-title">Непотопляемая селфи-палка</h2>
-								<p class="main-content-gallery-images-price">2 500 руб.</p>
+								<span class="main-content-gallery-images-price">2 500 руб.</span>
 							</a>	
 						</figure>
 						<figure class="main-content-gallery-images-item">
 							<a href="#">
 								<img src="image/item-4.jpg" width="360" height="380" alt="Селфи-палка &amp;quotСледуй за мной&amp;quot">
-								<h2 class="main-content-gallery-images-title">Селфи-палка "Следуй за мной"</h2>
-								<p class="main-content-gallery-images-price">4 900 руб.</p>
+								<h2 class="main-content-gallery-images-title">Селфи-палка "Следуй за<br>
+								мной"</h2>
+								<span class="main-content-gallery-images-price">4 900 руб.</span>
 							</a>	
 						</figure>
 					</div>
@@ -178,9 +187,7 @@
 	<footer class="main-footer">
 		<div class="container">
 			<div class="main-footer-about">
-				<a class="main-footer-logo" href="#">
-					<img src="image/main-footer-logo.png" width="163" height="36" alt="Device">
-				</a>
+				<a class="main-footer-logo" href="#">Device</a>
 				<address class="main-header-logo-address">г. Москва, ул. Строителей, 15</address>
 			</div>
 			<nav class="main-footer-menu">
@@ -197,37 +204,38 @@
 				</ul>
 				<ul class="main-footer-menu-social-list">
 					<li class="main-footer-menu-social-item">
-						<a href="#">
-							<img src="image/icon-fb.svg" width="38" height="38" alt="facebook">
+						<a href="#">Facebook
+							<div class="main-footer-social-image fb"></div>
 						</a>
 					</li>
 					<li class="main-footer-menu-social-item">
-						<a href="#">
-							<img src="image/icon-insta.svg" width="38" height="38" alt="instagram">
+						<a href="#">Instagram
+							<div class="main-footer-social-image insta"></div>
 						</a>
 					</li>
 					<li class="main-footer-menu-social-item">
-						<a href="#">
-							<img src="image/icon-twit.svg" width="38" height="38" alt="twitter">
+						<a href="#">Twitter
+							<div class="main-footer-social-image tw"></div>
 						</a>
 					</li>
 				</ul>
 			</nav>
 			<div class="main-footer-user">
 				<ul class="main-footer-user-list">
-					<li class="main-footer-user-item">
-						<a href="#">Войти</a>
+					<li class="main-footer-user-item enter">
+						<a href="#"><span class="logo"></span>Войти</a>
 					</li>
-					<li class="main-footer-user-item">
-						<a href="#">Сравнить</a>
+					<li class="main-footer-user-item compare">
+						<a href="#"><span class="logo"></span>Сравнить</a>
 					</li>
-					<li class="main-footer-user-item">
-						<a href="#">Корзина</a>
+					<li class="main-footer-user-item basket">
+						<a href="#"><span class="logo"></span>Корзина</a>
 					</li>
 				</ul>
-				<p class="main-footer-user-telephon">Тел.: +7(495)495-95-95</p>
+				<p class="main-footer-user-telephon">Тел.: +7 (495) 495-95-95</p>
 				<a class="main-footer-user-copyright" href="#">
-					<img src="image/icon-logo-htmlacad.svg" width="27" height="34" alt="HTMLAcademy">
+					<img src="image/htmlacademy.png" width="27" height="34" alt="HTMLAcademy">
+					<span class="main-footer-user-copyright-hover"></span>
 				</a>
 			</div>
 		</div>
