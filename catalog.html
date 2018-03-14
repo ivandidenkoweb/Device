@@ -82,48 +82,54 @@
 					<h3 class="main-content-filter-title">Фильтр:</h3>
 					<form class="main-content-filter-form" action="#" method="get">
 						<h4 class="main-content-filter-form-title">Стоимость</h4>
+						<div class="main-content-filter-form-range">
+							<div class="main-content-filter-form-range-controls">
+								<div class="scale">
+									<div class="bar" style="width: 70%;"></div>
+								</div>
+								<div class="toggle min-toggle"></div>
+								<div class="toggle max-toggle"></div>
+							</div>
+							<div class="main-content-filter-form-price-controls">
+								<label>от <input class="min-price" type="number" value="0"></label>
+								<label>до <input class="max-price" type="number" value="5000"></label>
+							</div>
+						</div>
 						<h4 class="main-content-filter-form-title">Цвет</h4>
 						<ul class="main-content-filter-form-listcheckboxes">
 							<li class="main-content-filter-form-itemcheckbox">
-								<label>
-									<input type="checkbox" name="black" checked>Черный
-								</label>
+								<input id="black" type="checkbox" name="black" checked>
+								<label for="black">Черный</label>
 							</li>
 							<li class="main-content-filter-form-itemcheckbox">
-								<label>
-									<input type="checkbox" name="white">Белый
-								</label>
+								<input id="white" type="checkbox" name="white">
+								<label for="white">Белый</label>
 							</li>
 							<li class="main-content-filter-form-itemcheckbox">
-								<label>
-									<input type="checkbox" name="blue" checked>Синий
-								</label>
+								<input id="blue" type="checkbox" name="blue" checked>
+								<label for="blue">Синий</label>
 							</li>
 							<li class="main-content-filter-form-itemcheckbox">
-								<label>
-									<input type="checkbox" name="red" checked>Красный
-								</label>
+								<input id="red" type="checkbox" name="red" checked>
+								<label for="red">Красный</label>
 							</li>
 							<li class="main-content-filter-form-itemcheckbox">	
-								<label>
-									<input type="checkbox" name="pink">Розовый
-								</label>
+								<input id="pink" type="checkbox" name="pink">
+								<label for="pink">Розовый</label>
 							</li>
 						</ul>
 						<h4 class="main-content-filter-form-title">Bluetooth</h4>
 						<ul class="main-content-filter-form-listradio">
 							<li class="main-content-filter-form-itemradio">
-								<label>	
-									<input type="radio" name="bluetooth" value="yes" checked>Есть
-								</label>
+								<input id="yes" type="radio" name="bluetooth" value="yes" checked>
+								<label for="yes">Есть</label>
 							</li>
 							<li class="main-content-filter-form-itemradio">
-								<label>
-									<input type="radio" name="bluetooth" value="no">Нет
-								</label>	
+								<input id="no" type="radio" name="bluetooth" value="no">
+								<label for="no">Нет</label>	
 							</li>
 						</ul>
-						<input type="submit" name="btn" value="Показать">	
+						<button class="main-content-filter-form-btn" type="submit">Показать<span class="main-content-filter-form-btn-bg"></span></button>
 					</form>
 				</section>
 				<section class="main-content-gallery">
