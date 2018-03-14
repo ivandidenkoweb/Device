@@ -1716,13 +1716,6 @@ button.main-content-filter-form-btn {
 button.main-content-filter-form-btn:hover .main-content-filter-form-btn-bg {
 	top: -9px;
 	height: 40px;
-	margin-bottom: 58px;
-}
-
-button.main-content-filter-form-btn:active .main-content-filter-form-btn-bg {
-	top: -9px;
-	height: 40px;
-	margin-bottom: 58px;
 }
 
 button.main-content-filter-form-btn:active {
@@ -1828,6 +1821,7 @@ button.main-content-filter-form-btn:active {
 }
 
 .main-content-gallery-images-item {
+	position: relative;
 	display: inline-block;
 	width: 360px;
 	margin-right: 40px;
@@ -1837,6 +1831,85 @@ button.main-content-filter-form-btn:active {
 
 .main-content-gallery-images-item:nth-child(2n) {
 	margin-right: 0;
+}
+
+.main-content-gallery-images-item-actions {
+	position: absolute;
+	z-index: 0;
+	display: none;
+	width: 360px;
+	height: 380px;
+	background-color: #eeeeee;
+	opacity: 0.7;
+}
+
+a.main-content-gallery-images-item-basket ,
+a.main-content-gallery-images-item-compare {
+	position: absolute;
+	z-index: 1;
+	display: none;
+	text-decoration: none;
+}
+
+.main-content-gallery-images-item:hover .main-content-gallery-images-item-actions,
+.main-content-gallery-images-item:hover a.main-content-gallery-images-item-basket,
+.main-content-gallery-images-item:hover a.main-content-gallery-images-item-compare {
+	display: block;
+}
+
+a.main-content-gallery-images-item-basket {
+	top: 179px;
+	left: 80px;
+	width: 200px;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Gilroyextrabold", "Arial", sans-serif;
+  color: #000000;
+  cursor: pointer;
+}
+
+.main-content-gallery-images-item-basket-bg {
+	position: absolute;
+  left: 0;
+  top: 7px;
+  z-index: -1;
+  display: block;
+  width: 200px;
+  height: 8px;
+  margin-bottom: 90px;
+  background-color: #ffc600;
+}
+
+a.main-content-gallery-images-item-basket:hover .main-content-gallery-images-item-basket-bg {
+	top: -9px;
+	height: 40px;
+}
+
+a.main-content-gallery-images-item-basket:active {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+a.main-content-gallery-images-item-compare {
+	top: 228px;
+	left: 108px;
+	width: 144px;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 13px;
+	color: #000000;
+	opacity: 0.5;
+	letter-spacing: 0.01em;
+}
+
+a.main-content-gallery-images-item-compare:hover {
+	opacity: 1.0;
+}
+
+a.main-content-gallery-images-item-compare:active {
+	opacity: 0.2;
 }
 
 .main-content-gallery-images-item a {
