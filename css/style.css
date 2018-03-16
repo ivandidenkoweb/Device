@@ -1416,31 +1416,32 @@ button.write-us-btn:active {
 }
 
 .main-header-user-list-item.enter.inner {
-	margin-right: 48px;
+	margin-right: -6px;
 }
 
 .main-header-user-list-item.enter.inner a {
 	display: inline-block;
 }
 
-.main-header-user-list-item.enter.inner a.logout {
+.main-header-user-list-item.logout {
 	opacity: 0.3;
+	margin-right: 50px;
 }
 
 main.inner {
 	margin-top: 0;
 }
 
-.main-header-user-list-item.enter.inner:hover a.login,
-.main-header-user-list-item.enter.inner:hover a.logout {
+.main-header-user-list-item.enter.inner:hover,
+.main-header-user-list-item.logout:hover {
 	opacity: 0.6;
 }
 
-.main-header-user-list-item.enter.inner:active a.login {
+.main-header-user-list-item.enter.inner:active  {
 	opacity: 0.3;
 }
 
-.main-header-user-list-item.enter.inner:active a.logout {
+.main-header-user-list-item.logout:active {
 	opacity: 1.0;
 }
 
@@ -1491,6 +1492,14 @@ main.inner {
 	color: #000000;
 	opacity: 0.3;
 	text-decoration: none;
+}
+
+.breadcrumbs-item a:hover {
+	opacity: 0.6;
+}
+
+.breadcrumbs-item a:active {
+	opacity: 0.1;
 }
 
 .main-content-filter {
