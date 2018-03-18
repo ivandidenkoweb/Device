@@ -297,7 +297,9 @@
 					<h2 class="info-contacts-title">Контакты</h2>
 					<p class="info-contacts-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 					<figure class="info-contacts-map">
-						<img src="image/map.jpg" width="560" height="222" alt="г. Москва, ул. Строителей, 15">
+						<a class="open-map" href="#">
+							<img src="image/map.jpg" width="560" height="222" alt="г. Москва, ул. Строителей, 15">
+						</a>
 					</figure>
 					<a class="info-contacts-btn" href="#">Напишите нам
 						<div class="info-contacts-btn-bg"></div>
@@ -390,61 +392,7 @@
 		</button>
 		<div id="yandex-map"></div>
 	</div>
-	<script>
-		
-		var link = document.querySelector(".info-contacts-btn");
-		var modalContent = document.querySelector(".modal-content");
-		var closeModalContent = modalContent.querySelector(".modal-content-close");
-		var form = modalContent.querySelector("form");
-		var login = modalContent.querySelector("[name=name]");
-		var mail = modalContent.querySelector("[name=mail]");
-		var text = modalContent.querySelector("[name=text]");
-		var storageLogin = localStorage.getItem("login");
-		var storageMail = localStorage.getItem("mail");
-		var storageText = localStorage.getItem("text");
-
-
-		link.addEventListener("click", function(event) {
-			event.preventDefault();
-			modalContent.classList.add("modal-content-show");
-			login.focus();
-
-			if(storageLogin && storageMail) {
-				login.value = storageLogin;
-				mail.value = storageMail;
-				text.focus();
-			} else if (storageLogin) {
-				login.value = storageLogin;
-				mail.focus();
-			} else {
-				login.focus();
-			}
-		});
-
-		closeModalContent.addEventListener("click", function(event) {
-			event.preventDefault();
-			modalContent.classList.remove("modal-content-show");
-		});
-
-		form.addEventListener("submit", function(event) {
-			if (!login.value || !mail.value) {
-				event.preventDefault();
-				console.log("Error");
-			} else {
-				localStorage.setItem("login", login.value);
-				localStorage.setItem("mail", mail.value);
-				localStorage.setItem("text", text.value);
-			}
-		});
-		
-		window.addEventListener("keydown", function(event) {
-			if (event.keyCode === 27) {
-				if (modalContent.classList.contains("modal-content-show")) {
-					modalContent.classList.remove("modal-content-show");
-				}
-			}
-		});
-
-	</script>
+	<script src="js/open-map.js"></script>
+	<script src="js/modal-content.js"></script>
 </body>
 </html>

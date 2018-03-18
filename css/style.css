@@ -16,6 +16,19 @@
   src: url(../fonts/Gilroyextrabold.ttf);
 }
 
+@keyframes bounce {
+	0% { transform: translate(-50%, -2000px); }
+	70% { transform: translate(-50%, 30px); }
+	90% { transform: translate(-50%, -10px); }
+	100% { transform: translate(-50%, 0); }
+}
+
+@keyframes shake {
+	0%, 100% { transform: translate(-50%, -50%); }
+	10%, 30%, 50%, 70%, 90% { transform: translate(-55%, -50%); }
+	20%, 40%, 60%, 80% { transform: translate(-45%, -50%); }
+} 
+
 html {
 	box-sizing: border-box;
 }
@@ -1230,6 +1243,11 @@ a.main-footer-logo:active {
 
 .modal-content-show {
 	display: block;
+	animation: bounce 0.6s;
+}
+
+.modal-error {
+	animation: shake 0.6s;
 }
 
 .modal-content-close {
@@ -1342,8 +1360,8 @@ a.main-footer-logo:active {
 	background-color: #ffffff;
 }
 
-.write-us input:invalid,
-.write-us textarea:invalid {
+.write-us input:required,
+.write-us textarea:required {
 	background-color: #ffdada;
 }
 
