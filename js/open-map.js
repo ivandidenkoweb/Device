@@ -1,15 +1,15 @@
-var openMap = document.querySelector(".open-map");
-var popup = document.querySelector(".modal-content-map");
-var closeMap = popup.querySelector(".modal-content-close");
+var mapOpen = document.querySelector(".open-map");
+var mapPopup = document.querySelector(".modal-content-map");
+var mapClose = mapPopup.querySelector(".modal-content-close");
 
-opnMap.addEventListener("click", function(event) {
+mapOpen.addEventListener("click", function(event) {
  event.preventDefault();
- popup.classList.add("modal-content-show");
+ mapPopup.classList.add("modal-content-show");
 });
 
-closeMap.addEventListener("click", function(event) {
+mapClose.addEventListener("click", function(event) {
  event.preventDefault();
- popup.classList.remove("modal-content-show");
+ mapPopup.classList.remove("modal-content-show");
 });
 
 window.addEventListener("keydown", function(event) {
