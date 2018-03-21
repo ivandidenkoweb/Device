@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>DEVICE Каталог</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header class="main-header container inner">
+		<a  class="main-header-logo" href="index.html">
+			Device
+		</a>
+		<div class="main-header-user clearfix">
+			<form class="main-header-user-search" action="#" method="post">
+				<label for="seach"></label>
+				<input id="seach" type="text" name="search-input" placeholder="Поиск по сайту">
+				<button class="main-header-user-search-btn">Найти</button>
+			</form>
+			<ul class="main-header-user-list">
+				<li class="main-header-user-list-item enter inner">
+					<a href="#">Иван Диденко</a>
+				</li>
+				<li class="main-header-user-list-item logout">
+					<a href="#">Выйти</a>
+				</li>
+				<li class="main-header-user-list-item compare">
+					<a href="#">Сравнить</a>
+				</li>
+				<li class="main-header-user-list-item basket">
+					<a href="#">Корзина</a>
+				</li>
+			</ul>
+		</div>
+		<nav class="main-header-menu">
+			<ul class="main-header-menu-list">
+				<li class="main-header-menu-item catalog">
+					<a href="#">Каталог товаров</a>
+					<nav class="catalog-menu">
+						<ul class="catalog-menu-list">
+							<li class="catalog-menu-item"><a href="#">Виртуальная рeальность</a></li>
+							<li class="catalog-menu-item"><a href="#">Фитнесс браслеты</a></li>
+							<li class="catalog-menu-item"><a href="#">Квадрокоптеры</a></li>
+						</ul>
+						<ul class="catalog-menu-list">
+							<li class="catalog-menu-item"><a href="#">Моноподы для селфи</a></li>
+							<li class="catalog-menu-item"><a href="#">Умные часы</a></li>
+						</ul>
+						<ul class="catalog-menu-list">
+							<li class="catalog-menu-item"><a href="#">Экшн-камеры</a></li>
+						</ul>
+					</nav>
+				</li>
+				<li class="main-header-menu-item delivery">
+					<a href="#">Доставка</a>
+				</li>
+				<li class="main-header-menu-item guarantee">
+					<a href="#">Гарантия</a>
+				</li>
+				<li class="main-header-menu-item contacts">
+					<a href="#">Контакты</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main class="inner">
+		<nav class="main-navigation">
+			<div class="container">
+				<h1 class="main-navigation-title">Напишите нам</h1>
+				<ul class="main-navigation-breadcrumbs-list">
+					<li class="breadcrumbs-item">
+						<a href="index.html">Главная</a>
+					</li>
+					<li class="breadcrumbs-item">
+						<a href="#">Напишите нам</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="modal-content inner">
+			<form class="write-us clearfix" action="#" method="post">
+				<label class="name">Ваше имя:<br>
+					<input class="name" type="text" name="name" placeholder="Представтесь, пожалуйста">
+				</label>
+				<label class="mail">Ваш e-mail:<br>
+					<input type="text" name="mail" placeholder="Для отправки ответа">
+				</label>
+				<label class="text">Текст письма:<br>
+					<textarea name="text" placeholder="В свободной форме"></textarea>
+				</label>
+				<button class="write-us-btn inner" type="submit">Отправить</button>
+				<div class="write-us-btn-bg inner"></div>
+			</form>
+		</div>
+	</main>
+	<footer class="main-footer">
+		<div class="container">
+			<div class="main-footer-about">
+				<a class="main-footer-logo" href="#">Device</a>
+				<address class="main-header-logo-address">г. Москва, ул. Строителей, 15</address>
+			</div>
+			<nav class="main-footer-menu">
+				<ul class="main-footer-menu-list">
+					<li class="main-footer-menu-item">
+						<a href="#">Доставка</a>
+					</li>
+					<li class="main-footer-menu-item">
+						<a href="#">Гарантия</a>
+					</li>
+					<li class="main-footer-menu-item">
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+				<ul class="main-footer-menu-social-list">
+					<li class="main-footer-menu-social-item">
+						<a href="#">Facebook
+							<div class="main-footer-social-image fb"></div>
+						</a>
+					</li>
+					<li class="main-footer-menu-social-item">
+						<a href="#">Instagram
+							<div class="main-footer-social-image insta"></div>
+						</a>
+					</li>
+					<li class="main-footer-menu-social-item">
+						<a href="#">Twitter
+							<div class="main-footer-social-image tw"></div>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="main-footer-user">
+				<ul class="main-footer-user-list">
+					<li class="main-footer-user-item enter">
+						<a href="#"><span class="logo"></span>Войти</a>
+					</li>
+					<li class="main-footer-user-item compare">
+						<a href="#"><span class="logo"></span>Сравнить</a>
+					</li>
+					<li class="main-footer-user-item basket">
+						<a href="#"><span class="logo"></span>Корзина</a>
+					</li>
+				</ul>
+				<p class="main-footer-user-telephon">Тел.: +7 (495) 495-95-95</p>
+				<a class="main-footer-user-copyright" href="#">
+					<img src="image/htmlacademy.png" width="27" height="34" alt="HTMLAcademy">
+					<span class="main-footer-user-copyright-hover"></span>
+				</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

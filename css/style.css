@@ -2093,3 +2093,29 @@ a.main-content-gallery-images-item-compare:active {
 	background-color: #d8d8d8;
   color: rgba(0, 0, 0, 0.3);
 }
+
+.modal-content.inner,
+.modal-content-map.inner {
+	position: static;
+	display: block;
+	margin: 50px auto;
+	transform: none;
+}
+
+button.write-us-btn.inner {
+	position: relative;
+	z-index: 2;
+}
+
+.write-us-btn-bg.inner {
+	z-index: 1;
+}
+
+.write-us-btn-bg.inner .wrap {
+	position: relative;
+}
+
+.modal-content-map.inner iframe {
+	position: absolute;
+	top: 0;
+}
