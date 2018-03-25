@@ -33,8 +33,6 @@ html {
 	box-sizing: border-box;
 }
 
-/*font-family: 'Open Sans', sans-serif;*/
-
 .clearfix::after {
  content: "";
  display: table;
@@ -198,11 +196,9 @@ a.main-header-logo:active {
 
 .main-header-user-list-item.compare::before {
 	content: "";
-
 	position: absolute;
 	top: 10px;
 	left: 10px;
-
 	width: 15px;
 	height: 15px;
 	background-image: url("../image/icon-compare.svg");
@@ -210,11 +206,9 @@ a.main-header-logo:active {
 
 .main-header-user-list-item.basket::before {
 	content: "";
-
 	position: absolute;
 	top: 10px;
 	left: 15px;
-
 	width: 15px;
 	height: 15px;
 	background-image: url("../image/icon-cart.svg");
@@ -223,7 +217,6 @@ a.main-header-logo:active {
 .main-header-user-list-item a {
 	display: block;
 	width: 100px;
-
 	font-size: 15px;
 	vertical-align: top;
 	text-decoration: none;
@@ -245,20 +238,16 @@ a.main-header-logo:active {
 
 .main-header-menu-item.catalog {
 	position: relative;
-
 	margin-right: 300px;
 }
 
 .main-header-menu-item.catalog::after {
 	content: "";
-	
 	position: absolute;
 	top: 2px;
 	right: -27px;
-	
 	width: 16px;
 	height: 16px;
-
 	background-image: url("../image/plus.png");
 }
 
@@ -317,7 +306,6 @@ li.main-header-menu-item.catalog a:hover + .catalog-menu {
 
 .main-header-menu-item a {
 	display: block;
-
 	font-family: "Gilroyextrabold", "Arial", sans-serif;
 	font-size: 18px;
 	text-transform: uppercase;
@@ -524,7 +512,6 @@ main {
 	display: inline-block;
 	width: 160px;
 	margin-right: 40px;
-
 	font-family: "Gilroyextrabold", "Arial", sans-serif;
 	font-size: 18px;
 	text-align: left;
@@ -537,7 +524,6 @@ main {
 
 .assortment-item a {
 	display: block;
-
 	text-decoration: none;
 	color: #000000;
 }
@@ -551,7 +537,6 @@ main {
 	width: 160px;
 	height: 160px;
 	margin-bottom: 36px;
-
 	background-color: rgba(255, 198, 0, 0.5);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -620,20 +605,16 @@ main {
 
 .advantages::after {
 	content: "";
-
 	position: absolute;
 	bottom: 0;
 	z-index: -2;
-
 	width: 100%;
 	height: 219px;
-	
 	background-color: #e6e6e6;
 }
 
 .advantages-navigation-list {
 	position: relative;
-
 	width: 284px;
 	padding: 0;
 	padding-top: 80px;
@@ -644,7 +625,6 @@ main {
 .advantages-navigation-item {
 	display: block;
 	margin-bottom: 24px;
-
 	list-style: none;
 }
 
@@ -674,11 +654,9 @@ main {
 	top:18px;
   left: 0px;
   z-index: -1;
-
 	display: inline-block;
 	width: 160px;
 	height: 8px;
-	
 	background-color: #ffc600;
 }
 
@@ -695,16 +673,13 @@ main {
 	position: absolute;
 	top: 55px;
   right: -820px;
-
   display: none;
-
 	font-size: 0;
 }
 
 .advantages-navigation-discription,
 .advantages-navigation-slider img {
 	display: inline-block;
-
 	vertical-align: top;
 	font-size: 18px;
 	margin-top: 15px;
@@ -716,7 +691,6 @@ main {
 
 .advantages-navigation-discription h2 {
 	margin-bottom: 28px;
-
 	font-size: 47px;
 	letter-spacing: 0.02em;
 	font-family: "Gilroyextrabold", "Arial", sans-serif;
@@ -815,15 +789,12 @@ main {
 .info-about::before,
 .info-contacts::before {
 	content: "";
-
 	position: absolute;
 	top: 0;
 	left: 0;
-
 	display: block;
 	width: 80px;
 	height: 7px;
-
 	background-color: #000000;
 }
 
@@ -831,7 +802,6 @@ main {
 .info-contacts-title {
 	margin-top: 49px;
 	margin-bottom: 40px;
-
 	font-size: 47px;
 	font-family: "Gilroyextrabold", "Arial", sans-serif;
 	letter-spacing: 0.01em;
@@ -840,7 +810,6 @@ main {
 .info-about-text,
 .info-contacts-text {
 	margin-bottom: 30px; 
-
 	font-family: "Open Sans", "Arial", sans-serif;
 	letter-spacing: 0.01em;
 	font-size: 15px;
@@ -851,13 +820,11 @@ main {
 	padding-top: 36px;
   margin-left: 35px;
   letter-spacing: 0.01em;
-
 	list-style: none;
 }
 
 .info-about-item {
 	position: relative;
-
 	color: #000000;
 	font-size: 16px;
 	line-height: 40px;
@@ -866,11 +833,9 @@ main {
 
 .info-about-item::after {
 	content: "";
-
 	position: absolute;
 	left: -35px;
   top: 15px;
-
 	display: block;
 	width: 10px;
 	height: 10px;
@@ -885,12 +850,10 @@ a.open-map {
 .info-about-btn,
 .info-contacts-btn {
 	position: relative;
-
 	display: block;
 	width: 260px;
 	margin-top: 64px;
 	margin-bottom: 74px;
-
 	font-size: 18px;
 	letter-spacing: 0.2em;
 	text-align: center;
@@ -943,13 +906,11 @@ a.open-map {
 
 .main-footer {
 	font-size: 0;
-
 	background-color: #444444;
 }
 
 .main-footer-about {
 	position: relative;
-
 	width: 352px;
 	display: inline-block;
 	font-size: 16px;
@@ -981,7 +942,6 @@ a.main-footer-logo:active {
 
 .main-header-logo-address {
 	margin-bottom: 155px;
-
 	font-family: "Open Sans", "Arial", sans-serif;
 	font-size: 15px;
 	line-height: 30px;
@@ -990,15 +950,12 @@ a.main-footer-logo:active {
 
 .main-footer-about::after {
 	content: "";
-
 	position: absolute;
 	left: 0;
   bottom: 71px;
-
 	display: block;
 	width: 80px;
 	height: 7px;
-
 	background-color: #ffe27f;
 }
 
@@ -1122,7 +1079,6 @@ a.main-footer-logo:active {
 .main-footer-user-item {
 	display: inline-block;
 	margin-right: 21px;
-
 	font-size: 15px;
 	vertical-align: top;
 }
