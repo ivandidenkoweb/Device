@@ -2071,7 +2071,12 @@ button.write-us-btn.inner {
 	position: relative;
 }
 
+.modal-content-map.inner .wrap {
+	position: relative;
+}
+
 .modal-content-map.inner iframe {
 	position: absolute;
 	top: 0;
+	left: 0;
 }
